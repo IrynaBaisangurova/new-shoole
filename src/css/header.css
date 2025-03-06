@@ -162,11 +162,12 @@ header label {
   display: none;
 }
 .icon-cart {
-  width: 30px;
+  width: 40px;
 }
 header .iconCart{
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 header .totalQuantity{
   position: absolute;
@@ -174,8 +175,8 @@ header .totalQuantity{
   right: 0;
   font-size: 1rem;
   background-color: red;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   color: #fff;
   font-weight: bold;
   display: flex;
@@ -183,6 +184,7 @@ header .totalQuantity{
   align-items: center;
   border-radius: 50%;
   transform: translateX(10px);
+  cursor: pointer;
 }
 @media screen and (max-width: 1158px) {
   header {
