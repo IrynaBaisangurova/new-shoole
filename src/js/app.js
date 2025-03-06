@@ -21,7 +21,7 @@ close.addEventListener('click', function (){
 
 let products = null;
 // get data from file json
-fetch('../data/product.json')
+fetch('/product.json')
     .then(response => response.json())
     .then(data => {
         products = data;
