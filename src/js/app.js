@@ -1,3 +1,4 @@
+let productEl = document.querySelector(".product");
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
@@ -18,14 +19,14 @@ close.addEventListener('click', function (){
 })
 
 
-let products = null;
+// let products = null;
 // get data from file json
-fetch('../product.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        addDataToHTML();
-})
+// fetch('./product.js')
+//     .then(response => response.json())
+//     .then(data => {
+//         products = data;
+//         addDataToHTML();
+// })
 
 //show datas product in list 
 function addDataToHTML(){
