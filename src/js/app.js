@@ -1,4 +1,3 @@
-
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
@@ -43,9 +42,8 @@ function addDataToHTML(){
             newProduct.innerHTML = 
             `<img src="${product.image}" alt="">
             <h2>${product.name}</h2>
-             <div class="desc">${product.desc}</div>
-            <div class="price">₴${product.price} / 1 ${product.unit}</div>
-            <button onclick="addCart(${product.id})">Додати до кошика</button>`;
+            <div class="price">$${product.price}</div>
+            <button onclick="addCart(${product.id})">Add To Cart</button>`;
 
             listProductHTML.appendChild(newProduct);
 
@@ -101,7 +99,7 @@ function addCartToHTML(){
                     `<img src="${product.image}">
                     <div class="content">
                         <div class="name">${product.name}</div>
-                        <div class="price">₴${product.price} / 1 ${product.unit}</div>
+                        <div class="price">$${product.price} / 1 product</div>
                     </div>
                     <div class="quantity">
                         <button onclick="changeQuantity(${product.id}, '-')">-</button>
