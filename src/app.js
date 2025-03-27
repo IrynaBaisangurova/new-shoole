@@ -20,7 +20,7 @@ close.addEventListener('click', function (){
 
 let products = null;
 // get data from file json
-fetch('https://IrynaBaisangurova.github.io/new-shoole/product.json')
+fetch('product.json')
     .then(response => response.json())
     .then(data => {
         products = data;
@@ -40,10 +40,10 @@ function addDataToHTML(){
             let newProduct = document.createElement('div');
             newProduct.classList.add('item');
             newProduct.innerHTML = 
-            `<img src="${product.image}" alt="product name">
+            `<img src="${product.image}" alt="">
             <h2>${product.name}</h2>
             <div class="price">$${product.price}</div>
-            <button onclick="addCart(${product.id})">Додати до кошика</button>`;
+            <button onclick="addCart(${product.id})">Add To Cart</button>`;
 
             listProductHTML.appendChild(newProduct);
 
